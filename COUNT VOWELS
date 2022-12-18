@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    char s[100];
+    int i,c=0;
+    scanf("%s",&s);
+    for(i=0;s[i]!='\0';i++)
+
+{
+    if(s[i]=='A'||s[i]=='E'||s[i]=='I'||s[i]=='O'||s[i]=='U')
+    {
+        c++;
+    }
+    }
+    if(c==0)
+    {
+        printf("no vowels");
+    }
+    else
+    {
+        printf("%d",c);
+    }
+}
